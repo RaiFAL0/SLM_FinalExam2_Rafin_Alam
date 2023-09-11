@@ -15,8 +15,9 @@ class TimeConverterTest {
     }
 
 
-
-
-
-
+    @Test
+    void apiInfo() {
+        TimeConverter tConv = new TimeConverter();
+        assertEquals("This API converts 24h time into AM/PM time.", tConv.apiInfo());
+    }
 }
